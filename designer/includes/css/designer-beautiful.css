@@ -1,0 +1,954 @@
+#designer-wrapper #udraw-bootstrap #udraw-main-designer-ui .modal:not(.toolbox-modal):not(.left-toolbox-modal) {
+    width: 100% !important;
+    margin-left: 0px !important;
+    background-color: initial !important;
+    position: absolute !important;
+}
+
+#designer-wrapper {
+    left: 0px;
+    position: fixed;
+    top: -9999px;
+    background: #fff;
+    height: 90%;
+    width: 100%;
+    z-index: 9999;
+}
+
+/*uDraw-bootstrap Container*/
+#udraw-bootstrap {
+    position: relative; /*Should not change*/
+    background-color: #F2F2F2;
+    text-align: left;
+    word-wrap: normal;
+    min-height: 500px;
+    height: 100%;
+    min-width: 955px;
+    width: 100%;
+    font-size: 12px;
+    display: none;
+    overflow: auto; /*Fixes issue with draggable modals when page is scrolled*/
+    /*
+    width and height can be defined by #px or #%;
+    If using %, you must define a width and height in a wrapper div.
+    if you want full width and height of browser, you must define
+    100% in the <body> and <html>? tags    
+    */
+}
+
+    #udraw-bootstrap a.btn i {
+        margin-left: 0px !important;
+    }
+
+    #udraw-bootstrap .select2-container .select2-choice {
+        padding: 0 0 0 8px !important;
+        background-color: #F2F2F2;
+    }
+
+    #udraw-bootstrap label {
+        margin-bottom: 0px;
+    }
+
+    #udraw-bootstrap td {
+        border-bottom: 0px solid #fff !important;
+        background: transparent !important;
+    }
+
+    #udraw-bootstrap .select2-large-list {
+        width: 300px !important;
+    }
+
+    #udraw-bootstrap .select2-fitting-list {
+        width: 150px !important;
+    }
+
+    #udraw-bootstrap .layer-box {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+        #udraw-bootstrap .layer-box ul {
+            width: 350px;
+            list-style: none;
+            margin: 0px 0px 0px 0px;
+            padding: 0px;
+        }
+
+        #udraw-bootstrap .layer-box li {
+            background: white;
+            position: relative;
+            margin: 1px;
+            padding: 4px;
+            border: 1px solid grey;
+            list-style: none;
+            padding-left: 30px;
+        }
+
+        #udraw-bootstrap .layer-box li .handle {
+            background: #f8f8f8;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            padding: 5px;
+        }
+
+        #udraw-bootstrap .layer-box .ui-selecting {
+            background: #eee;
+        }
+
+        #udraw-bootstrap .layer-box .ui-selecting .handle {
+            background: #ddd;
+        }
+
+        #udraw-bootstrap .layer-box .ui-selected {
+            background: #def;
+        }
+
+        #udraw-bootstrap .layer-box .ui-selected .handle {
+            background: #cde;
+        }
+
+    #udraw-bootstrap .scroll-content {
+        width: auto;
+        height: 250px;
+        /*border: 13px solid #bed5cd;*/
+        overflow-x: auto;
+        overflow-y: auto;
+        white-space: normal;
+        padding-bottom: 5px;
+    }
+
+    #udraw-bootstrap .scroll-content-item {
+        display: inline-block;
+        margin-right: 5px;
+        max-width: 110px;
+    }
+
+    #udraw-bootstrap .scroll-content-item a,
+    #udraw-bootstrap .scroll-content-item a:hover {
+        margin-top: 0px;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    #udraw-bootstrap .scroll-content-item span.linked_templates_name_span {
+        white-space: normal;
+        color: #aaa;
+    }
+    
+    #udraw-bootstrap [data-udraw="qrPreviewContainer"] img {
+        max-width: 256px;
+        max-height: 256px;
+        margin-left: 140px;
+        margin-top: 15px;
+    }
+
+    #udraw-bootstrap .dropdown-submenu {
+        position: relative;
+    }
+
+        #udraw-bootstrap .dropdown-submenu > .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+            margin-left: -1px;
+            -webkit-border-radius: 0 6px 6px 6px;
+            -moz-border-radius: 0 6px 6px 6px;
+            border-radius: 0 6px 6px 6px;
+        }
+
+        #udraw-bootstrap .dropdown-submenu:hover > .dropdown-menu {
+            display: block;
+        }
+
+        #udraw-bootstrap .dropdown-submenu > a:after {
+            display: block;
+            content: " ";
+            float: right;
+            width: 0;
+            height: 0;
+            border-color: transparent;
+            border-style: solid;
+            border-width: 5px 0 5px 5px;
+            border-left-color: #cccccc;
+            margin-top: 5px;
+            margin-right: -10px;
+        }
+
+
+
+    #udraw-bootstrap #layer_properties_options label {
+        padding-left: 2px !important;
+        font-size: 12px !important;
+    }
+
+/* uDraw Designer menu Bar*/
+    #udraw-bootstrap [data-udraw="designerMenu"] {
+    background: linear-gradient(#EEEEEE, #C2C2C2);
+    background: -webkit-linear-gradient(#EEEEEE, #C2C2C2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#EEEEEE, #C2C2C2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#EEEEEE, #C2C2C2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#EEEEEE, #C2C2C2); /* Standard syntax */
+    padding: 5px;
+    border: none;
+}
+
+        #udraw-bootstrap [data-udraw="designerMenu"] .designer-menu-btn {
+            width: 120px;
+            padding: 3px 10px;
+        }
+
+        #udraw-bootstrap [data-udraw="designerMenu"] .btn-sm, #udraw-bootstrap [data-udraw="designerMenu"] .btn-group-sm > .btn {
+            padding: 3px 10px;
+        }
+
+        #udraw-bootstrap [data-udraw="designerMenu"] [data-udraw="zoomContainer"] {
+            display: inline-block;
+            left: auto;
+        }
+
+#udraw-bootstrap [data-udraw="zoomContainer"] [data-udraw="zoomDisplay"] {
+    display: inline-block;
+    color: #000000;
+}
+
+        #udraw-bootstrap .slider-class, [data-udraw="zoomContainer"] [data-udraw="zoomLevel"] {
+            width: 100px;
+            display: inline-block;
+            height: 0.4em;
+        }
+
+    #udraw-bootstrap [data-udraw="zoomContainer"] [data-udraw="zoomLevel"] .ui-slider-handle {
+        border: 1px solid grey;
+        box-shadow: inset 0 0 20px grey;
+        height: 0.9em;
+        width: 0.7em;
+    }
+            #udraw-bootstrap [data-udraw="zoomContainer"] [data-udraw="zoomLevel"] .ui-slider-handle, .slider-class .ui-slider-handle {
+                border: 1px solid grey;
+                box-shadow: inset 0 0 20px grey;
+                height: 0.9em;
+                width: 0.7em;
+            }
+
+#udraw-bootstrap [data-udraw="designerMenu"] [data-udraw="versionContainer"] {
+    padding-right: 10px;
+    position: relative;
+    float: right;
+    /*chrome specific top setting set in ruler.js*/
+}
+
+    #udraw-bootstrap [data-udraw="designerMenu"] [data-udraw="versionContainer"] [data-udraw="designerVersion"] {
+        margin-left: 5px;
+        color: #999999;
+    }
+/* END uDraw-menu Bar*/
+
+/* Tool bar */
+#udraw-bootstrap [data-udraw="designerToolbar"] {
+    padding-top: 5px;
+    /*width: 95%; /* inherits the width of udraw-bootstrap container*/
+    /*position: absolute; /* should not change*/
+    /*top: 50px;
+    left: 60px;
+    z-index: 99;*/
+    display: -webkit-box;
+    display: block;
+}
+
+    #udraw-bootstrap [data-udraw="designerToolbar"] .designer-toolbar-btn, #udraw-bootstrap .toolbox-modal .designer-toolbar-btn{
+        padding: 3px 6px 2px;
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    #udraw-bootstrap [data-udraw="designerToolbar"] [data-udraw="fontFamilySelector"] {
+        width: 150px;
+        background-color: white;
+        border-radius: 4px;
+    }
+
+    #udraw-bootstrap [data-udraw="designerToolbar"] div.font-family-selection {
+        z-index: 0;
+    }
+
+    #udraw-bootstrap [data-udraw="designerToolbar"] div.font-size-select-option {
+        z-index: 0;
+    }
+
+    #udraw-bootstrap #restrict-font-family-selection {
+        width: 150px;
+        background-color: white;
+        border-radius: 4px;
+    }
+
+    #udraw-bootstrap [data-udraw="designerToolbar"] .toolbar-btn-group {
+        padding-left: 5px;
+    }
+
+    #udraw-bootstrap [data-udraw="designerToolbar"] [data-udraw="cropButton"] {
+        margin-left: 115px;
+        display: none;
+    }
+    #udraw-bootstrap [data-udraw="replaceImage"] {
+        display: none;
+        position:absolute;
+        z-index: 1;
+        text-decoration: none;
+    }
+/* End Tool Bar*/
+
+/* LEFT TOOL BAR*/
+#udraw-bootstrap .designer-side-toolbar {
+    display: inline-block;
+    min-height: 565px;
+    height: 100%; /* should not change*/
+    background-color: #D9D9D9;
+    width: 50px;
+    padding-left: 5px;
+    /*padding-top: 50px;*/
+    background: linear-gradient(#C2C2C2,#EEEEEE, #C2C2C2);
+    background: -webkit-linear-gradient(#C2C2C2,#EEEEEE, #C2C2C2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#C2C2C2,#EEEEEE, #C2C2C2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C2C2C2,#EEEEEE, #C2C2C2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C2C2C2,#EEEEEE, #C2C2C2); /* Standard syntax */
+    z-index: 999;
+}
+
+    #udraw-bootstrap .designer-side-toolbar .hover-icon {
+        width: 40px;
+        text-align: left;
+        transition: width 0.5s;
+    }
+
+    #udraw-bootstrap .designer-side-toolbar .hover-text {
+        /*visibility: hidden;*/
+        display: none;
+        opacity: 0;
+        transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+    }
+
+    #udraw-bootstrap .designer-side-toolbar .hover-text-right {
+        /*visibility: hidden;*/
+        display: none;
+        opacity: 0;
+        transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+        left: 0;
+    }
+
+    #udraw-bootstrap .designer-side-toolbar .hover-icon:hover {
+        width: 110px;
+    }
+
+        #udraw-bootstrap .designer-side-toolbar .hover-icon:hover .hover-text {
+            display: inline-block;
+            opacity: 1;
+            transition-delay: 0s;
+        }
+
+    #udraw-bootstrap .designer-side-toolbar .hover-icon i {
+        font-size: 1.5em;
+        margin-top: 2px;
+    }
+
+    #udraw-bootstrap .designer-side-toolbar .left-dropdown {
+        left: 50px;
+        top: 0;
+    }
+
+    #udraw-bootstrap .designer-side-toolbar .right-dropdown {
+        right: 50px;
+        top: 0;
+    }
+
+    #udraw-bootstrap .designer-side-toolbar .icon {
+        font-size: 1.5em;
+    }
+
+    #udraw-bootstrap .designer-side-toolbar [data-udraw="uploadImage"], #udraw-bootstrap [data-udraw="objectColouringUpload"] {
+        position: absolute;
+        top: -6px;
+        left: 0;
+        cursor: pointer;
+        opacity: 0;
+        width: 225px;
+        height: 35px;
+    }
+
+    #udraw-bootstrap .designer-side-toolbar .shape-icon {
+        width: 24px;
+        height: 24px;
+    }
+/* END LEFT TOOL BAR*/
+
+/*Footer*/
+#udraw-bootstrap [data-udraw="designerFooter"] {
+    /*position: absolute; /* should not change*/
+    width: 100%;
+    bottom: 0px;
+    background-color: #D9D9D9;
+    height: 135px;
+    background: linear-gradient(#C2C2C2,#EEEEEE);
+    background: -webkit-linear-gradient(#C2C2C2,#EEEEEE); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#C2C2C2,#EEEEEE); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#C2C2C2,#EEEEEE); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#C2C2C2,#EEEEEE); /* Standard syntax */
+}
+
+
+    #udraw-bootstrap [data-udraw="designerFooter"] #facebook-login {
+        position: relative;
+        display: inline;
+        left: 50px;
+        top: 5px;
+    }
+
+/* END Footer*/
+
+/*Canvas and Container*/
+#udraw-bootstrap [data-udraw="canvasContainer"] {
+    position: relative;
+    padding: 5px;
+    display: inline-block;
+    min-width: 550px;
+    width: calc(100% - 100px);
+    height: 100%;
+    min-height: 540px;
+    overflow: auto;
+}
+
+#udraw-bootstrap [data-udraw="progressDialog"] {
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+#udraw-bootstrap div.active[data-udraw="progressDialog"] {
+    display: inline;
+}
+#udraw-bootstrap [data-udraw="canvasWrapper"] {
+    display: none;
+    position: absolute;
+    padding-top: 0px;
+    padding-left: 2px;
+}
+#udraw-bootstrap [data-udraw="outsideAlert"] {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+/* End Canvas and Container*/
+
+#udraw-bootstrap .font-size-select-option {
+    min-width: 75px;
+}
+
+#udraw-bootstrap [data-udraw="fontSizeContainer"] div.dropdownList {
+    width: 100px;
+}
+#udraw-bootstrap [data-udraw="fontHeightContainer"] div.dropdownList {
+    width: 75px;
+}
+
+#udraw-bootstrap [data-udraw="fontHeightSelector"] {
+    width: 75px;
+    padding-left: 5px;
+    height: 29px;
+}
+
+#udraw-bootstrap .font-family-selection {
+    width: 100px;
+}
+
+/*Tabbables*/
+.tab-content {
+    display: none;
+    background: #ededed;
+    padding: 15px;
+    overflow-y: auto;
+    height: 375px;
+}
+
+    .tab-content.current {
+        display: inherit;
+    }
+
+#udraw-bootstrap .toolbox-header {
+    padding:4px;
+    cursor: move;
+    background-color: #CCCCCC;
+    height: 25px;
+}
+
+#udraw-bootstrap .toolbox-body {
+    padding: 5px;
+}
+
+#udraw-bootstrap .toolbox-footer {
+    padding: 10px;
+}
+
+#udraw-bootstrap .btn-group .sm-btn-group {
+    padding: 3px 6px 2px;
+    margin: 0px;
+}
+
+#udraw-bootstrap #text-container .text-input-container{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#udraw-bootstrap .toolbox-modal{
+    width: 350px;
+    left: calc(100% - 350px);
+    position: absolute !important;
+    overflow: visible;
+}
+
+#udraw-bootstrap .toolbox-modal .modal-dialog {
+    width: 350px;
+}
+
+#udraw-bootstrap .toolbox-modal .modal-content {
+    border-radius: 0px;
+}
+
+#udraw-bootstrap .left-toolbox-modal{
+    width: 350px;
+    left: 0px;
+    right: calc(95% - 450px); 
+    position: absolute !important;
+    overflow: visible;
+}
+
+#udraw-bootstrap .toolbox-modal a {
+    font-size: 12px;
+}
+
+#udraw-bootstrap .toolbox-modal .toolbox-header a {
+    font-size: 10px;
+}
+
+#udraw-bootstrap .standard-js-colour-picker {
+  font-size: 0px;
+  min-width: 30px;
+  min-height: 27px;
+  cursor: pointer;
+  display: inline;
+  margin-left: 6px;
+  border-style:none;
+}
+
+.cp-app {
+    z-index: 100000000000000000 !important;
+}
+
+#udraw-bootstrap .restriction-list-container {
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    min-height: 25px;
+    min-width: 150px;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-right: 8%;
+}
+
+#udraw-bootstrap .listed-restriction-tags {
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    background-color: #DFDFDF;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+}
+
+#udraw-bootstrap .remove-restrict-tag {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#udraw-bootstrap .list-hr-divider {
+    margin-top: 9px !important;
+    margin-bottom: 9px !important;
+}
+
+#udraw-bootstrap .restricted-colour-tags{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid black;
+}
+#udraw-bootstrap .restricted-designer-colours-min {
+    display: none;
+}
+
+#udraw-bootstrap .object-rotation-slider-container {
+    padding: 7px;
+    border: 1px solid #AAAAAA;
+    margin: 5px;
+}
+
+#udraw-bootstrap .form-input-field {
+    padding: 2px 5px 2px 5px;
+    display: inline-block;
+}
+
+#udraw-bootstrap .disable-selection-text {
+    color: #ABABAB;
+    font-style: italic;
+}
+
+#udraw-bootstrap .input-field-container {
+    padding: 5px;
+    display: none;
+}
+
+#udraw-bootstrap .input-label-span {
+    width: 30%;
+    display: inline-block;
+}
+
+#udraw-bootstrap .move-page-btn-designer {
+    width: 5px;
+}
+
+#udraw-bootstrap .image-clipping-box {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#udraw-bootstrap [data-udraw="privateTemplatesCategoryList"] {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+}
+
+#udraw-bootstrap [data-udraw="rectangleCornerContainer"] {
+    padding: 7px;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#udraw-bootstrap [data-udraw="templatesCategoryList"] .dropdown-menu, #udraw-bootstrap [data-udraw="privateTemplatesCategoryList"] .dropdown-menu {
+    height: 475px;
+    overflow: auto;
+}
+
+#udraw-bootstrap .disabled-btn {
+    font-style: italic;
+    color: #A7A7A7;
+    cursor: default;
+    pointer-events: none;
+}
+
+#udraw-bootstrap [data-udraw="pagesContainer"] {
+    padding: 5px 0px 5px 0px;
+}
+
+#udraw-bootstrap .slick-prev:before, #udraw-bootstrap .slick-next:before {
+    color: #000000 !important;
+}
+
+#udraw-bootstrap div#udraw-main-designer-ui .button-shadow {
+    color: #252525;
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #ABABAB;
+    border-bottom: 1px solid #ABABAB;
+    background: linear-gradient(#EEEEEE, #C2C2C2);
+    background: -webkit-linear-gradient(#EEEEEE, #C2C2C2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#EEEEEE, #C2C2C2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#EEEEEE, #C2C2C2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#EEEEEE, #C2C2C2); /* Standard syntax */
+    border-radius: 0px;
+}
+
+#udraw-bootstrap .layers-icon {
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+#udraw-bootstrap .udraw-layers a {
+    font-size: 12px;
+    float: right;
+}
+#udraw-bootstrap [data-udraw="pagesEditContainer"] {
+    padding: 0px;
+}
+
+#udraw-bootstrap .toolbox-modal .panel-body {
+    padding: 0px;
+}
+
+#udraw-bootstrap .select2-choice {
+    border-radius: 0px;
+}
+
+#udraw-bootstrap [data-udraw="designerToolbar"] [data-udraw="designerColourPicker"] {
+    border-radius: 1px;
+    height: 30px;
+    width: 30px;
+}
+
+#udraw-bootstrap [data-udraw="fontHeightContainer"] > div {
+    min-width: 55px;
+}
+
+#udraw-bootstrap .designer-side-toolbar .modalButton {
+    width: 100px;
+    text-align: center;
+    display: none;
+    float: right;
+    font-size: 10px;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div[data-udraw="uDrawClipartFolderContainer"] ul > li.category-list > div {
+    margin-bottom: 5px;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div[data-udraw="uDrawClipartFolderContainer"] ul > li.category-list.active > div {
+    box-shadow: 0px 0px 10px rgba(41, 126, 255, 0.5);
+    position: relative;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div.modal-footer > ol[data-udraw="clipartFolderList"],
+#udraw-bootstrap [data-udraw="apparelGraphicsModal"] div.modal-footer > ol[data-udraw="apparelGraphicsCategoryPath"] {
+    display: inline-block;
+    margin: 0px 5px 0px 0px;
+    width: 90%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div.modal-footer > ol[data-udraw="clipartFolderList"] a,
+#udraw-bootstrap [data-udraw="apparelGraphicsModal"] div.modal-footer > ol[data-udraw="apparelGraphicsCategoryPath"] a {
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div.modal-footer > ol[data-udraw="clipartFolderList"] a.active,
+#udraw-bootstrap [data-udraw="apparelGraphicsModal"] div.modal-footer > ol[data-udraw="apparelGraphicsCategoryPath"] a.active {
+    font-weight: 800;
+}
+
+
+#udraw-bootstrap .modal-dialog.modal-lg {
+    width: 925px;
+}
+
+#udraw-bootstrap div.main-category-container {
+    width: 16%;
+    vertical-align: top;
+    border: 1px solid #EEEEEE;
+    display: inline-block;
+    text-align: center;
+}
+
+#udraw-bootstrap div.main-category-container div.category-pointer {
+    height: 0px;
+    margin-top: 0px;
+    display: none;
+}
+
+#udraw-bootstrap div.main-category-container div.category-pointer i {
+    transform: scale(2);
+    padding-bottom: 10px;
+    color: #EEEEEE;
+}
+
+#udraw-bootstrap div.sub-category-container {
+    display: none;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+#udraw-bootstrap div.graphic-container {
+    width: 15%;
+    max-height: 100px;
+    border: 1px solid #EEEEEE;
+    display: inline-block;
+    text-align: center;
+}
+
+#udraw-bootstrap div.sub-category-row {
+    width: 99%;
+}
+#udraw-bootstrap .modal .modal-header {
+    padding: 5px;
+}
+#udraw-bootstrap .modal .modal-header .modal-header-btn-container {
+    float: right;
+    margin-top: -1px;
+}
+#udraw-bootstrap .modal .modal-header [data-dismiss="modal"] {
+    float: right;
+    text-decoration: none;
+    color: #4D4D4D;
+    padding: 3px 8px;
+}
+
+#udraw-bootstrap [data-udraw="settingsModal"] .document-settings-container {
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    width: calc(100% - (8.3% * 2));
+    padding-bottom: 5px;
+}
+
+#udraw-bootstrap div.designer-thumbs{
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+    overflow: hidden;
+    padding: 0;
+    margin: 5px;
+    border: 0;
+    vertical-align: top;
+    position: relative;
+}
+
+#udraw-bootstrap div.designer-thumbs:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+}
+
+#udraw-bootstrap a.delete-asset {
+    font-size: 12px;
+    display: inline-block;
+}
+
+#udraw-bootstrap a.delete-asset:hover {
+    text-decoration: none;
+    color: #9BD1FF;
+}
+
+#udraw-bootstrap div.designer-thumbs > div {
+    height: 96px;
+    max-height:96px;
+}
+
+#udraw-bootstrap div.designer-thumbs img {
+    max-width: 100%;
+    max-height:55px;
+}
+
+#udraw-bootstrap [data-udraw="layerLabelsModal"] [data-udraw="layerLabelsList"] {
+    padding-left: 0px;
+}
+#udraw-bootstrap [data-udraw="layerLabelsModal"] [data-udraw="layerLabelsList"] .layer-label-list-items {
+    list-style: none;
+    padding: 5px;
+}
+#udraw-bootstrap [data-udraw="layerLabelsModal"] [data-udraw="layerLabelsList"] .handle {
+    background: #f8f8f8;
+    padding: 5px;
+    display: inline-block;
+}
+#udraw-bootstrap [data-udraw="layerLabelsModal"] [data-udraw="layerLabelsList"] {
+    padding-left: 0px;
+}
+#udraw-bootstrap [data-udraw="layerLabelsModal"] [data-udraw="layerLabelsList"] .layer-label-list-items {
+    list-style: none;
+    padding: 5px;
+}
+#udraw-bootstrap [data-udraw="layerLabelsModal"] [data-udraw="layerLabelsList"] .handle {
+    background: #f8f8f8;
+    padding: 5px;
+    display: inline-block;
+}
+#udraw-bootstrap li.category-list {
+    max-width: 120px;
+    width: 50%;
+    text-align: center;
+}
+ul[data-udraw="layerLabelsList"] {
+    list-style-type: none;
+    line-height: 0.5;
+}
+#udraw-bootstrap [data-udraw="pagesList"] {
+    overflow: auto;
+    max-height: 250px;
+}
+#udraw-bootstrap [data-udraw="pagesList"] li.pages_list {
+    list-style-type: none;
+    border-radius: 5px;
+    border: 1px solid #777777;
+}
+#udraw-bootstrap div[data-udraw="textModal"] table td {
+    padding: 5px;
+}
+#udraw-bootstrap div[data-udraw="textModal"] input[data-udraw="letterSpaceInput"] {
+    width: 100px;
+}
+/*Multipage PDF import modal*/
+[data-udraw="multipagePDFModal"] [data-udraw="page_list_container"], [data-udraw="multipagePDFModal"] [data-udraw="imported_images_container"] {
+    vertical-align: top;
+    display: inline-block;
+    width: 45%;
+}
+[data-udraw="multipagePDFModal"] img {
+    max-width: 100px;
+    max-height: 100px;
+    border: 1px solid #777;
+}
+#udraw-bootstrap [data-udraw="multipagePDFModal"] img {
+    border: 1px solid #777;
+}
+#udraw-bootstrap [data-udraw="openClipartList"] div.thumbnail {
+    display: inline-block; 
+    width: 120px; 
+    height: 100px; 
+    overflow: hidden; 
+    padding: 0; 
+    margin: 5px; 
+    border: 0; 
+    vertical-align: top;
+}
+#udraw-bootstrap [data-udraw="openClipartList"] div.thumbnail img {
+    height:96px;
+    max-height:96px;
+}
+[data-udraw="multipagePDFModal"] div.image_div {
+    display: inline-block;
+    padding: 5px;
+    /*Grabbing cursor, using move as a fallback*/
+    cursor: move;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+[data-udraw="multipagePDFModal"] div.image_import_queue {
+    min-height: 110px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+}
+[data-udraw="multipagePDFModal"] span.import_span {
+    font-size: 2em;
+    color: #ccc;
+}
+[data-udraw="multipagePDFModal"] div.page_div {
+    border: 1px solid #888;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+[data-udraw="multipagePDFModal"] a.remove_import_image, [data-udraw="multipagePDFModal"] a.remove_import_image:hover, [data-udraw="multipagePDFModal"] a.remove_import_image:active {
+    text-decoration: none;
+    color: #888;
+    display: block;
+}
+[data-udraw="multipagePDFModal"] div.import_image_clone {
+    width: 30%;
+    display: inline-block;
+}
+[data-udraw="multipagePDFModal"] div.progress_div {
+    display: none;
+    text-align: center;
+}
+[data-udraw="multipagePDFModal"] div[data-udraw="page_list"] {
+    overflow: auto;
+}

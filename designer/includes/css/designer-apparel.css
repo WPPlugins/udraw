@@ -1,0 +1,1011 @@
+#designer-wrapper {
+    position: initial;
+    height: 90%;
+    width: 100%;
+}
+
+#udraw-bootstrap td {
+    border-bottom: 0px solid #fff !important;
+    background: transparent !important;
+}
+
+#udraw-bootstrap .select2-large-list {
+    width: 300px !important;
+}
+
+#udraw-bootstrap .select2-fitting-list {
+    width: 150px !important;
+}
+
+#udraw-bootstrap .layer-box {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+    #udraw-bootstrap .layer-box ul {
+        width: 460px;
+        list-style: none;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+    }
+
+    #udraw-bootstrap .layer-box li {
+        background: white;
+        position: relative;
+        margin: 1px;
+        padding: 4px;
+        border: 1px solid grey;
+        list-style: none;
+        padding-left: 30px;
+    }
+
+    #udraw-bootstrap .layer-box li .handle {
+        background: #f8f8f8;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding: 5px;
+    }
+
+    #udraw-bootstrap .layer-box .ui-selecting {
+        background: #eee;
+    }
+
+    #udraw-bootstrap .layer-box .ui-selecting .handle {
+        background: #ddd;
+    }
+
+    #udraw-bootstrap .layer-box .ui-selected {
+        background: #def;
+    }
+
+    #udraw-bootstrap .layer-box .ui-selected .handle {
+        background: #cde;
+    }
+
+#udraw-bootstrap .scroll-content {
+    width: auto;
+    height: 250px;
+    /*border: 13px solid #bed5cd;*/
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: normal;
+    padding-bottom: 5px;
+}
+
+#udraw-bootstrap .scroll-content-item {
+    display: inline-block;
+}
+
+    #udraw-bootstrap .scroll-content-item a {
+        margin-top: 0px;
+    }
+
+#udraw-bootstrap [data-udraw="qrPreviewContainer"] img {
+    max-width: 256px;
+    max-height: 256px;
+    margin-left: 140px;
+    margin-top: 15px;
+}
+
+#udraw-bootstrap .dropdown-submenu {
+    position: relative;
+}
+
+    #udraw-bootstrap .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px 6px;
+        border-radius: 0 6px 6px 6px;
+    }
+
+    #udraw-bootstrap .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+
+    #udraw-bootstrap .dropdown-submenu > a:after {
+        display: block;
+        content: " ";
+        float: right;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #cccccc;
+        margin-top: 5px;
+        margin-right: -10px;
+    }
+
+
+
+#udraw-bootstrap #layer_properties_options label {
+    padding-left: 2px !important;
+    font-size: 14px !important;
+}
+
+/*uDraw-bootstrap Container*/
+#udraw-bootstrap {
+    position: relative; /*Should not change*/
+    background-color: #F2F2F2;
+    text-align: left;
+    word-wrap: normal;
+    min-height: initial;
+    height: 100%;
+    min-width: 1150px;
+    width: 100%;
+    /*
+    width and height can be defined by #px or #%;
+    If using %, you must define a width and height in a wrapper div.
+    if you want full width and height of browser, you must define
+    100% in the <body> and <html>? tags    
+    */
+}
+
+    #udraw-bootstrap a.btn i {
+        margin-left: 0px !important;
+    }
+
+    #udraw-bootstrap .select2-container .select2-choice {
+        padding: 0 0 0 8px !important;
+        background-color: #F2F2F2;
+    }
+
+    #udraw-bootstrap label {
+        margin-bottom: 0px;
+    }
+
+/* END uDraw-bootstrap Container*/
+
+/* uDraw Designer menu Bar*/
+#udraw-bootstrap [data-udraw="designerMenu"] {
+    position: absolute; /*Should not change*/
+    background-color: #D9D9D9;
+    min-width: 1075px;
+    width: 100%;
+    z-index: 999;
+    height: 45px;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+    #udraw-bootstrap [data-udraw="designerMenu"] .designer-menu-btn {
+        width: 120px;
+        padding: 3px 10px;
+    }
+
+    #udraw-bootstrap [data-udraw="designerMenu"] [data-udraw="zoomContainer"] {
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        left: auto;
+    }
+
+#udraw-bootstrap [data-udraw="zoomContainer"] [data-udraw="zoomDisplay"] {
+    display: inline-block;
+    color: #000000;
+}
+
+        #udraw-bootstrap .slider-class, [data-udraw="zoomContainer"] [data-udraw="zoomLevel"] {
+            width: 100px;
+            display: inline-block;
+            height: 0.4em;
+        }
+
+    #udraw-bootstrap [data-udraw="zoomContainer"] [data-udraw="zoomLevel"] .ui-slider-handle {
+        border: 1px solid grey;
+        box-shadow: inset 0 0 20px grey;
+        height: 0.9em;
+        width: 0.7em;
+    }
+            #udraw-bootstrap [data-udraw="zoomContainer"] [data-udraw="zoomLevel"] .ui-slider-handle, .slider-class .ui-slider-handle {
+                border: 1px solid grey;
+                box-shadow: inset 0 0 20px grey;
+                height: 0.9em;
+                width: 0.7em;
+            }
+
+#udraw-bootstrap [data-udraw="designerMenu"] [data-udraw="versionContainer"] {
+    padding-top: 1px;
+    padding-right: 10px;
+    position: relative;
+    float: right;
+    /*chrome specific top setting set in ruler.js*/
+}
+
+    #udraw-bootstrap [data-udraw="designerMenu"] [data-udraw="versionContainer"] [data-udraw="designerVersion"] {
+        margin-top: 2px;
+        margin-left: 5px;
+        color: #999999;
+    }
+/* END uDraw-menu Bar*/
+
+/* Tool bar */
+#udraw-bootstrap [data-udraw="designerToolbar"] {
+    min-width: 1020px;
+    width: 95%; /* inherits the width of udraw-bootstrap container*/
+    position: absolute; /* should not change*/
+    top: 50px;
+    left: 60px;
+    z-index: 99;
+    display: -webkit-inline-box;
+}
+
+    #udraw-bootstrap [data-udraw="designerToolbar"] .designer-toolbar-btn {
+        padding: 3px 6px 2px;
+        margin: 0px;
+    }
+
+    #udraw-bootstrap [data-udraw="designerToolbar"] [data-udraw="fontFamilySelector"] {
+        width: 150px;
+        background-color: white;
+        border-radius: 4px;
+    }
+
+    #udraw-bootstrap #restrict-font-family-selection {
+        width: 150px;
+        background-color: white;
+        border-radius: 4px;
+    }
+
+    #udraw-bootstrap [data-udraw="designerToolbar"] .toolbar-btn-group {
+        padding-left: 5px;
+    }
+
+        #udraw-bootstrap [data-udraw="designerToolbar"] [data-udraw="fontHeightSelector"] {
+            width: 70px;
+            padding-left: 5px;
+            height: 29px;
+        }
+
+    #udraw-bootstrap [data-udraw="designerToolbar"] [data-udraw="cropButton"] {
+        margin-left: 115px;
+        display: none;
+    }
+    #udraw-bootstrap [data-udraw="replaceImage"] {
+        display: none;
+        position:absolute;
+        z-index: 1;
+    }
+/* End Tool Bar*/
+
+/* LEFT TOOL BAR*/
+#udraw-bootstrap [data-udraw="designerSideBar"] {
+    position: absolute; /* should not change*/
+    min-height: 360px;
+    height: 100%; /* should not change*/
+    background-color: #D9D9D9;
+    width: 50px;
+    z-index: 998;
+    padding-left: 5px;
+    padding-top: 50px;
+}
+
+    #udraw-bootstrap [data-udraw="designerSideBar"] .hover-icon {
+        width: 40px;
+        text-align: left;
+        transition: width 0.5s;
+    }
+
+    #udraw-bootstrap [data-udraw="designerSideBar"] .hover-text {
+        /*visibility: hidden;*/
+        display: none;
+        opacity: 0;
+        transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+    }
+
+    #udraw-bootstrap [data-udraw="designerSideBar"] .hover-text-right {
+        /*visibility: hidden;*/
+        display: none;
+        opacity: 0;
+        transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+        left: 0;
+    }
+
+    #udraw-bootstrap [data-udraw="designerSideBar"] .hover-icon:hover {
+        width: 110px;
+    }
+
+        #udraw-bootstrap [data-udraw="designerSideBar"] .hover-icon:hover .hover-text {
+            display: inline-block;
+            opacity: 1;
+            transition-delay: 0s;
+        }
+
+    #udraw-bootstrap [data-udraw="designerSideBar"] .hover-icon i {
+        font-size: 1.5em;
+        margin-top: 2px;
+    }
+
+    #udraw-bootstrap [data-udraw="designerSideBar"] .left-dropdown {
+        left: 50px;
+        top: 0;
+    }
+
+    #udraw-bootstrap [data-udraw="designerSideBar"] .right-dropdown {
+        right: 50px;
+        top: 0;
+    }
+
+    #udraw-bootstrap [data-udraw="designerSideBar"] .icon {
+        font-size: 1.5em;
+    }
+
+    #udraw-bootstrap [data-udraw="designerSideBar"] [data-udraw="uploadImage"], [data-udraw="objectColouringUpload"] {
+        position: absolute;
+        top: -6px;
+        left: 0;
+        cursor: pointer;
+        opacity: 0;
+        width: 225px;
+        height: 35px;
+    }
+
+    #udraw-bootstrap [data-udraw="designerSideBar"] .shape-icon {
+        width: 24px;
+        height: 24px;
+    }
+/* END LEFT TOOL BAR*/
+
+/*Footer*/
+#udraw-bootstrap [data-udraw="designerFooter"] {
+    position: absolute; /* should not change*/
+    min-width: 1010px;
+    width: 100%;
+    bottom: 0px;
+    background-color: #D9D9D9;
+    height: 30px;
+    z-index: 997;
+}
+
+/* END Footer*/
+
+/*Canvas and Container*/
+#udraw-bootstrap [data-udraw="canvasContainer"] {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    max-height: 620px;
+    min-height: 620px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    /*box-shadow: inset 0 0 5px #D9D9D9;*/
+}
+
+#udraw-bootstrap [data-udraw="progressDialog"] {
+    width: 600px;
+    position: absolute;
+    padding: 70px;
+    display: inline;
+}
+
+#udraw-bootstrap [data-udraw="canvasWrapper"] {
+    display: none;
+    padding: 10px;
+    position: relative;
+}
+/* End Canvas and Container*/
+
+/*Rulers*/
+#udraw-bootstrap [data-udraw="topRuler"] {
+    border-radius: 5px;
+    position: absolute;
+    left: 80px;
+    top: 50px;
+}
+
+#udraw-bootstrap [data-udraw="sideRuler"] {
+    border-radius: 5px;
+    position: absolute;
+    left: 50px;
+    top: 80px;
+}
+
+#udraw-bootstrap .font-size-select-option {
+    min-width: 75px;
+}
+
+#udraw-bootstrap [data-udraw="fontHeightSelector"] {
+    min-width: 75px;
+}
+
+#udraw-bootstrap .font-family-selection {
+    min-width: 150px;
+    max-width: 150px;
+}
+
+#udraw-bootstrap .tab-content {
+    display: none;
+    background: #ededed;
+    padding: 15px;
+    overflow-y: auto;
+    height: 375px;
+}
+
+    #udraw-bootstrap .tab-content.current {
+        display: inherit;
+    }
+
+#udraw-bootstrap .toolbox-header {
+    padding:8px;
+    cursor: move;
+    background-color: #CCCCCC;
+}
+
+#udraw-bootstrap .toolbox-body {
+    padding: 0px;
+}
+
+#udraw-bootstrap .toolbox-footer {
+    padding: 10px;
+}
+
+#udraw-bootstrap .btn-group .sm-btn-group {
+    padding: 3px 6px 2px;
+    margin: 0px;
+}
+
+#udraw-bootstrap #text-container .text-input-container{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#udraw-bootstrap .toolbox-modal{
+    width: 450px;
+    left: calc(95% - 450px);
+    position: absolute !important;
+    overflow: visible;
+}
+
+#udraw-bootstrap .left-toolbox-modal{
+    width: 450px;
+    left: 0px;
+    right: calc(95% - 450px); 
+    position: absolute !important;
+    overflow: visible;
+}
+
+#udraw-bootstrap .left-toolbox-modal .modal-content{
+    text-align: right;
+}
+
+#udraw-bootstrap .standard-js-colour-picker {
+  font-size: 0px;
+  min-width: 25px;
+  min-height: 25px;
+  cursor: pointer;
+  display: inline;
+  margin-left: 6px;
+  border-style:none;
+}
+
+.cp-app {
+    z-index: 100000000000000000 !important;
+}
+
+#udraw-bootstrap .toolbox-modal .modal-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#udraw-bootstrap .left-toolbox-modal .modal-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#udraw-bootstrap .restriction-list-container {
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    min-height: 25px;
+    min-width: 150px;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-right: 8%;
+    font-size: 14px;
+}
+
+#udraw-bootstrap .listed-restriction-tags {
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    background-color: #DFDFDF;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+}
+
+#udraw-bootstrap .remove-restrict-tag {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#udraw-bootstrap .list-hr-divider {
+    margin-top: 9px !important;
+    margin-bottom: 9px !important;
+}
+
+#udraw-bootstrap .restricted-colour-tags{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid black;
+}
+#udraw-bootstrap .restricted-designer-colours-min {
+    display: none;
+}
+
+#udraw-bootstrap .object-rotation-slider-container {
+    width: 435px;
+    padding: 7px;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#udraw-bootstrap .form-input-field {
+    padding: 2px 5px 2px 5px;
+    display: inline-block;
+}
+
+#udraw-bootstrap .disable-selection-text {
+    color: #ABABAB;
+    font-style: italic;
+}
+
+#udraw-bootstrap .input-field-container {
+    padding: 5px;
+    display: none;
+}
+
+#udraw-bootstrap .input-label-span {
+    width: 30%;
+    display: inline-block;
+}
+
+#udraw-bootstrap .move-page-btn-designer {
+    width: 5px;
+}
+
+#udraw-bootstrap .image-clipping-box {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+/*apparel css*/
+#udraw-bootstrap .shirt-size-btn {
+    width: 65px;
+    text-align: center;
+    border: 1px solid #B4B4B4;
+    text-decoration: none !important;
+    color: #041223 !important;
+}
+#udraw-bootstrap .shirt-size-btn:hover{
+    color: #14afb9;
+}
+
+#udraw-bootstrap #shirt-size-btn-container{
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    justify-content: space-around;
+}
+
+#udraw-bootstrap #shirt-image-div{
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    justify-content: space-around;
+    border-top: 1px solid #ABABAB; 
+    margin-top: 5px; 
+    padding-top: 5px; 
+}
+
+#udraw-bootstrap #shirt-size-table td{
+    padding: 2px;
+    border: 1px solid #ABABAB;
+    width: 60px;
+    height: 30px;
+}
+/*end apparel css*/
+#udraw-bootstrap [data-udraw="privateTemplatesCategoryList"] {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+}
+
+#udraw-bootstrap [data-udraw="rectangleCornerContainer"] {
+    width: 435px;
+    padding: 7px;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#udraw-bootstrap [data-udraw="templatesCategoryList"] .dropdown-menu, [data-udraw="privateTemplatesCategoryList"] .dropdown-menu {
+    height: 475px;
+    overflow: auto;
+}
+
+#udraw-bootstrap .disabled-btn {
+    font-style: italic;
+    color: #A7A7A7;
+    cursor: default;
+    pointer-events: none;
+}
+
+#udraw-bootstrap [data-udraw="pagesContainer"] {
+    bottom: 35px;
+    margin-left: 60px;
+    width: 70%;
+}
+
+#udraw-bootstrap .slick-prev:before, .slick-next:before {
+    color: #000000 !important;
+}
+
+#udraw-bootstrap #pages-sortable {
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+#udraw-bootstrap .apparel-quantity-input {
+    -moz-appearance: textfield; /*firefox*/
+}
+
+#udraw-bootstrap .apparel-quantity-input::-webkit-outer-spin-button,
+#udraw-bootstrap .apparel-quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#udraw-bootstrap .apparel-quantity-decrease-btn {
+    border: 1px solid #ABABAB;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #F6F6F6 !important;
+    width:auto;
+    text-decoration: none !important;
+    color: #041223 !important;
+    padding: 4.5px 5px;
+    margin-right: -6px;
+}
+#udraw-bootstrap .apparel-quantity-increase-btn {
+    border: 1px solid #ABABAB;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #F6F6F6 !important;
+    width: auto;
+    text-decoration: none !important;
+    color: #041223 !important;
+    padding: 4.5px 5px;
+    margin-left: -6px;
+}
+
+#udraw-bootstrap #apparel-tool-bar {
+    padding: 15px 10px 15px 10px;
+    text-align: initial;
+}
+
+#udraw-bootstrap .accordion-content-wrapper {
+    padding: 15px;
+}
+
+#udraw-bootstrap .udraw-layers a {
+    float: right;
+    padding-left: 5px;
+}
+
+#udraw-bootstrap .layers-icon {
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+/*apparel stuff*/
+#accordion-resizer {
+    padding: 10px;
+    width: 445px;
+    height: auto;
+    min-height: 795px;
+    max-width: 500px;
+}
+
+#udraw-bootstrap .btn-default {
+    padding: 3px 6px;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 0.5em 0.5em;
+}
+
+.text-colour-picker-class {
+    background: #FFFFFF;
+    border: none;
+    z-index: 0;
+}
+
+#udraw-bootstrap #apparel-object-stroke-spinner {
+    width: 80px;
+}
+
+#udraw-bootstrap [data-udraw="layersContainer"] .checkbox {
+    margin-bottom: 7px;
+}
+
+.product-size-span {
+    unicode-bidi: initial;
+}
+
+#text-accordion-box {
+    text-align: left;
+}
+
+#apparel-bottom-container, [data-udraw="objectAlignContainer"] {
+    direction: ltr;
+}
+
+.object-rotation-slider-container, [data-udraw="rectangleCornerContainer"] {
+    width: 392px;
+}
+#shapes-accordion-box{
+    padding: 20px 10px;
+}
+#shapes-accordion-box a {
+padding: 10px;
+}
+    
+.shape-icon {
+    border: 1px solid #B4B4B4 !important;
+    padding: 10px;
+}
+    
+.align-btn {
+    padding: 10px;
+    border: 1px solid #B4B4B4;
+    background: rgb(255,255,255);
+    margin-left: 10px;
+}
+.apparel-tool-bar-btn {
+    padding: 10px !important;
+    width: 45px;
+    height: 45px;
+}
+#accordion-image-box {
+    padding: 10px;
+    margin: 0px !important;
+}
+#add-apparel-text-btn {
+    padding: 7px 10px !important;
+    margin-top: -6px;
+}
+        
+div.product-category-div {
+    width: 75px;
+    height: 75px;
+    /*border: 1px solid #ABABAB;*/
+    margin: 5px;
+    display: inline-block;
+}
+
+div.product-category-div a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+img.product-category-img {
+    height: 62px;
+    width: 62px;
+}
+
+#udraw-bootstrap .shirt-size-btn {
+    width: 65px;
+    text-align: center;
+    border: 1px solid #B4B4B4;
+    text-decoration: none !important;
+    color: #041223 !important;
+}
+#udraw-bootstrap .shirt-size-btn:hover{
+    color: #14afb9;
+}
+
+#udraw-bootstrap #shirt-size-btn-container{
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    justify-content: space-around;
+}
+
+#udraw-bootstrap #shirt-image-div{
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    justify-content: space-around;
+    border-top: 1px solid #ABABAB; 
+    margin-top: 5px; 
+    padding-top: 5px; 
+}
+
+#udraw-bootstrap #shirt-size-table td{
+    padding: 2px;
+    border: 1px solid #ABABAB;
+    width: 60px;
+    height: 30px;
+}
+
+#udraw-bootstrap .apparel-quantity-input {
+    -moz-appearance: textfield; /*firefox*/
+}
+
+#udraw-bootstrap .apparel-quantity-input::-webkit-outer-spin-button,
+#udraw-bootstrap .apparel-quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#udraw-bootstrap .apparel-quantity-decrease-btn {
+    border: 1px solid #ABABAB;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #F6F6F6 !important;
+    width:auto;
+    text-decoration: none !important;
+    color: #041223 !important;
+    padding: 4.5px 5px;
+    margin-right: -6px;
+}
+#udraw-bootstrap .apparel-quantity-increase-btn {
+    border: 1px solid #ABABAB;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #F6F6F6 !important;
+    width: auto;
+    text-decoration: none !important;
+    color: #041223 !important;
+    padding: 4.5px 5px;
+    margin-left: -6px;
+}
+
+#udraw-bootstrap #apparel-tool-bar {
+    padding: 15px 10px 15px 10px;
+    text-align: initial;
+}
+
+#udraw-bootstrap [data-udraw="layersModal"] li .layers-gradient-icon {
+    display: none;
+}
+
+.darkroom-container div ul li button {
+    font-size: 1.7em;
+}
+
+#udraw-bootstrap btn {
+    text-transform: none;
+}
+
+#udraw-bootstrap [data-udraw="fontHeightContainer"] > div {
+    min-width: 55px;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div[data-udraw="uDrawClipartFolderContainer"] ul > li.category-list > div {
+    margin-bottom: 5px;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div[data-udraw="uDrawClipartFolderContainer"] ul > li.category-list.active > div {
+    box-shadow: 0px 0px 10px rgba(41, 126, 255, 0.5);
+    position: relative;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div.modal-footer > ol[data-udraw="clipartFolderList"],
+#udraw-bootstrap [data-udraw="apparelGraphicsModal"] div.modal-footer > ol[data-udraw="apparelGraphicsCategoryPath"] {
+    display: inline-block;
+    margin: 0px 5px 0px 0px;
+    width: 90%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div.modal-footer > ol[data-udraw="clipartFolderList"] a,
+#udraw-bootstrap [data-udraw="apparelGraphicsModal"] div.modal-footer > ol[data-udraw="apparelGraphicsCategoryPath"] a {
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div.modal-footer > ol[data-udraw="clipartFolderList"] a.active,
+#udraw-bootstrap [data-udraw="apparelGraphicsModal"] div.modal-footer > ol[data-udraw="apparelGraphicsCategoryPath"] a.active {
+    font-weight: 800;
+}
+
+#udraw-bootstrap .modal-dialog.modal-lg {
+    width: 925px;
+}
+
+#udraw-bootstrap div.main-category-container {
+    width: 16%;
+    vertical-align: top;
+    border: 1px solid #EEEEEE;
+    display: inline-block;
+    text-align: center;
+}
+
+#udraw-bootstrap div.main-category-container div.category-pointer {
+    height: 0px;
+    margin-top: 0px;
+    display: none;
+}
+
+#udraw-bootstrap div.main-category-container div.category-pointer i {
+    transform: scale(2);
+    padding-bottom: 10px;
+    color: #EEEEEE;
+}
+
+#udraw-bootstrap div.sub-category-container {
+    display: none;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+#udraw-bootstrap div.graphic-container {
+    width: 15%;
+    max-height: 100px;
+    border: 1px solid #EEEEEE;
+    display: inline-block;
+    text-align: center;
+}
+
+#udraw-bootstrap div.sub-category-row {
+    width: 99%;
+}
+
+#udraw-bootstrap .modal .modal-header [data-dismiss="modal"] {
+    float: right;
+    text-decoration: none;
+    color: #4D4D4D;
+    padding: 3px 8px;
+}
+
+#udraw-bootstrap [data-udraw="settingsModal"] .document-settings-container {
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    width: calc(100% - (8.3% * 2));
+    padding-bottom: 5px;
+}
+
+#udraw-bootstrap div.designer-thumbs{
+    display: inline-block;
+    width: 120px;
+    height: 100px;
+    overflow: hidden;
+    padding: 0;
+    margin: 5px;
+    border: 0;
+    vertical-align: top;
+    position: relative;
+}
+
+#udraw-bootstrap div.designer-thumbs:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+}
+
+#udraw-bootstrap a.delete-asset {
+    float: right;
+    font-size: 12px;
+    position: absolute;
+    display: block;
+    padding-left: 110px;
+}
+
+#udraw-bootstrap a.delete-asset:hover {
+    text-decoration: none;
+    color: #9BD1FF;
+}
+
+#udraw-bootstrap div.designer-thumbs > div {
+    height: 96px;
+    max-height:96px;
+}
+
+#udraw-bootstrap div.designer-thumbs img {
+    max-width: 100%;
+    height:auto;
+    max-height:96px;
+}
